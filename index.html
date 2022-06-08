@@ -16,17 +16,25 @@
 
 <body>
   <!-- HEADER -->
-  <header>
-    <nav>
-      <img src="resources/img/haruoSushi-logo.svg" alt="logotipo haruo sushi">
-      <div>
-        <img src="resources/img/instagram-logo.svg" alt="logotipo instagram">
-        <img src="resources/img/facebook-logo.svg" alt="logotipo facebook">
+  <header class="header">
+    <nav class="header__nav">
+      <a class="header__nav__link" href="index.html">
+        <img class="header__nav__link__logo" src="resources/img/haruoSushi-logo.svg" alt="logotipo haruo sushi">
+      </a>
+      <div class="header__nav__redesSociales">
+        <a class="header__nav__redesSociales__link" href="https://www.instagram.com/haruo.sushi/">
+          <img class="header__nav__redesSociales__link__logo" src="resources/img/instagram-logo.svg" alt="logotipo instagram">
+        </a>
+
+        <a class="header__nav__redesSociales__link" href="https://www.facebook.com/haruosushi-639793279968057/?ref=page_internal">
+          <img class="header__nav__redesSociales__link__logo" src="resources/img/facebook-logo.svg" alt="logotipo facebook">
+        </a>
       </div>
-      <img src="resources/img/icono-menu.svg" alt="icono menu">
-      <ul>
-        <li>Menu</li>
-        <li>Pedidos</li>
+
+      <img class="header__nav__iconoMenu" id="iconoMenu" src="resources/img/icono-menu.svg" alt="icono menu">
+      <ul class="header__nav__menu" id="menuOpciones">
+        <li class="header__nav__menu__item">Menu</li>
+        <li class="header__nav__menu__item">Pedidos</li>
       </ul>
     </nav>
   </header>
@@ -151,6 +159,9 @@
       <p>© Haruo Sushi 2022 / All Rights Reserved </p>
     </div>
   </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/index.js"></script>
 </body>
 
 </html>

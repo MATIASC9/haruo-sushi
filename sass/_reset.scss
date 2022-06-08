@@ -1,12 +1,6 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
-/*
-  2. Remove default margin
-*/
 * {
   margin: 0;
 }
@@ -20,6 +14,9 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+img {
+  image-rendering: crisp-edges;
 }
 input, button, textarea, select {
   font: inherit;

@@ -1,13 +1,7 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/*
-  2. Remove default margin
-*/
 * {
   margin: 0;
 }
@@ -26,6 +20,10 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
+img {
+  image-rendering: crisp-edges;
+}
+
 input, button, textarea, select {
   font: inherit;
 }
@@ -40,6 +38,52 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+}
+.header__nav__link {
+  text-decoration: none;
+  width: 50%;
+  margin-bottom: 15px;
+}
+.header__nav__redesSociales {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.header__nav__redesSociales__link {
+  width: 25px;
+  filter: invert(42%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(93%) contrast(97%);
+}
+.header__nav__iconoMenu {
+  width: 30px;
+  cursor: pointer;
+}
+.header__nav__menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 40px 30px;
+  gap: 20px;
+}
+
+.--mostrar {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
