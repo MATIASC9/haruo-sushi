@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 .header__nav {
   display: flex;
@@ -80,6 +81,31 @@ body {
   font-weight: 600;
   padding: 40px 30px;
   gap: 20px;
+}
+
+.pedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: no-repeat center/cover url("../resources/img/sushi-1.webp");
+  width: 100%;
+  padding: 30px 20px 20px;
+  transition: all 0.5s ease-in-out;
+}
+.pedido__texto {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+}
+.pedido__btn {
+  border: 1px solid rgba(255, 255, 255, 0.452);
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 50px;
+  font-weight: 500;
 }
 
 .--mostrar {
