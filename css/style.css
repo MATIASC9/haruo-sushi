@@ -172,12 +172,65 @@ body {
   text-transform: uppercase;
   font-size: 0.8rem;
   color: rgb(59, 59, 59);
+  margin-bottom: 110px;
 }
 .horarios__titulo {
   font-weight: 600;
 }
 .horarios__dias {
   font-weight: 600;
+}
+
+.platosPrincipales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 40px;
+  gap: 50px;
+  font-family: "Bellefair", serif;
+}
+.platosPrincipales__cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  background: no-repeat center -60px/400% url("../resources/img/bg-seccion-platos-principales.webp");
+  height: 250px;
+}
+.platosPrincipales__cabecera__label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: rgb(95, 95, 95);
+}
+.platosPrincipales__cabecera__titulo {
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.platosPrincipales__menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 20px;
+}
+.platosPrincipales__menu__plato1, .platosPrincipales__menu__plato3, .platosPrincipales__menu__plato2 {
+  display: flex;
+  background: no-repeat center/cover url("../resources/img/calamar-relleno.webp");
+  height: 310px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.platosPrincipales__menu__plato2 {
+  background: no-repeat center/cover url("../resources/img/pulpo-a-la-parrilla.webp");
+  height: 350px;
+}
+.platosPrincipales__menu__plato3 {
+  background: no-repeat center/cover url("../resources/img/pulpo-a-la-gallega.webp");
 }
 
 .--mostrar {

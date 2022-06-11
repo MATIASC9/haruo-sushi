@@ -1,7 +1,6 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 // HEADER
 .header {
@@ -29,7 +28,8 @@ body {
 
       &__link {
         width: 25px;
-        filter: invert(42%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(93%) contrast(97%);
+        filter: invert(42%) sepia(0%) saturate(0%) hue-rotate(173deg)
+          brightness(93%) contrast(97%);
       }
     }
     &__iconoMenu {
@@ -61,7 +61,7 @@ body {
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
-  
+
   &__imgFondo1 {
     position: absolute;
     top: 50%;
@@ -81,7 +81,7 @@ body {
     0% {
       opacity: 0;
     }
-    45%{
+    45% {
       opacity: 0;
     }
     50% {
@@ -143,12 +143,73 @@ body {
   text-transform: uppercase;
   font-size: 0.8rem;
   color: rgb(59, 59, 59);
+  margin-bottom: 110px;
 
   &__titulo {
     font-weight: 600;
   }
   &__dias {
     font-weight: 600;
+  }
+}
+
+.platosPrincipales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 40px;
+  gap: 50px;
+  font-family: "Bellefair", serif;
+
+  &__cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    background: no-repeat center -60px/400% url("../resources/img/bg-seccion-platos-principales.webp");
+    height: 250px;
+
+    &__label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: rgb(95, 95, 95);
+    }
+    &__titulo {
+      font-weight: 400;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+  &__menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+
+    &__plato1 {
+      display: flex;
+      background: no-repeat center/cover
+        url("../resources/img/calamar-relleno.webp");
+      height: 310px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 2.5rem;
+    }
+    &__plato2 {
+      @extend .platosPrincipales__menu__plato1;
+      background: no-repeat center/cover
+        url("../resources/img/pulpo-a-la-parrilla.webp");
+      height: 350px;
+    }
+    &__plato3 {
+      @extend .platosPrincipales__menu__plato1;
+      background: no-repeat center/cover
+        url("../resources/img/pulpo-a-la-gallega.webp");
+    }
   }
 }
 
