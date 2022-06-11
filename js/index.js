@@ -8,7 +8,7 @@ iconoMenu.addEventListener('click', () => {
 }
 );
 // Funcion para cambiar imagenes con un timeOut
-const cambiarImagenes = (i) => {
+/*const cambiarImagenes = (i) => {
   let url;
   setTimeout(() => {
     url = `../resources/img/sushi-${i}.webp`;
@@ -17,4 +17,4 @@ const cambiarImagenes = (i) => {
 };
 for (let i = 1; i < 4; i++) {
   cambiarImagenes(i);
-}
+} */
