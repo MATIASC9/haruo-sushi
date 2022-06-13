@@ -181,15 +181,16 @@ body {
   font-weight: 600;
 }
 
-.platosPrincipales {
+.platosPrincipales, .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 40px;
   gap: 50px;
   font-family: "Bellefair", serif;
+  margin-bottom: 110px;
 }
-.platosPrincipales__cabecera {
+.platosPrincipales__cabecera, .menu__cabecera {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,16 +199,15 @@ body {
   background: no-repeat center -60px/400% url("../resources/img/bg-seccion-platos-principales.webp");
   height: 250px;
 }
-.platosPrincipales__cabecera__label {
+.platosPrincipales__cabecera__label, .menu__cabecera__label {
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
   color: rgb(95, 95, 95);
 }
-.platosPrincipales__cabecera__titulo {
+.platosPrincipales__cabecera__titulo, .menu__cabecera__titulo {
   font-weight: 400;
   font-size: 2rem;
-  text-transform: uppercase;
 }
 .platosPrincipales__menu {
   display: grid;
@@ -233,8 +233,80 @@ body {
   background: no-repeat center/cover url("../resources/img/pulpo-a-la-gallega.webp");
 }
 
+.menu {
+  background: no-repeat center -90px/600% url("../resources/img/bg-seccion-menu.webp");
+  padding: 70px 30px 0px;
+}
+.menu__cabecera {
+  background: none;
+  height: auto;
+}
+.menu__cabecera__titulo {
+  font-size: 3rem;
+}
+.menu__platos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.menu__platos__plato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.menu__platos__plato__detalles {
+  display: flex;
+  flex-direction: column;
+}
+.menu__platos__plato__detalles__titulo {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.menu__platos__plato__detalles__ingredientes {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(95, 95, 95);
+}
+.menu__platos__plato__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  gap: 5px;
+  width: max-content;
+}
+.menu__platos__plato__aside__sugerencia {
+  font-size: 0.5rem;
+  color: #fff;
+  background-color: red;
+  padding: 3px 6px;
+  text-transform: uppercase;
+}
+.menu__btnVerMenu {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+  border-bottom: 2px solid rgb(163, 160, 160);
+  text-decoration: none;
+  transition: border-bottom 0.2s ease-in-out;
+}
+.menu__btnVerMenu:hover {
+  border-bottom: 2px solid red;
+}
+
 .--mostrar {
   display: flex;
+}
+
+.--ocultar {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

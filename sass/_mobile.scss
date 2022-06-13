@@ -160,6 +160,7 @@ body {
   padding: 10px 40px;
   gap: 50px;
   font-family: "Bellefair", serif;
+  margin-bottom: 110px;
 
   &__cabecera {
     display: flex;
@@ -179,7 +180,6 @@ body {
     &__titulo {
       font-weight: 400;
       font-size: 2rem;
-      text-transform: uppercase;
     }
   }
   &__menu {
@@ -213,7 +213,91 @@ body {
   }
 }
 
+.menu {
+  @extend .platosPrincipales;
+  background: no-repeat center -90px/600% url("../resources/img/bg-seccion-menu.webp");
+  padding: 70px 30px 0px;
+
+  &__cabecera {
+    @extend .platosPrincipales__cabecera;
+    background: none;
+    height: auto;
+
+    &__label {
+      @extend .platosPrincipales__cabecera__label;
+    }
+    &__titulo {
+      @extend .platosPrincipales__cabecera__titulo;
+      font-size: 3rem;
+    }
+  }
+  &__platos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    &__plato {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+
+      &__detalles {
+        display: flex;
+        flex-direction: column;
+
+        &__titulo {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+        &__ingredientes {
+          font-family: "Montserrat", sans-serif;
+          font-size: 0.9rem;
+          font-weight: 500;
+          color: rgb(95, 95, 95);
+        }
+      }
+      &__aside {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        gap: 5px;
+        width: max-content;
+
+        &__sugerencia {
+          font-size: 0.5rem;
+          color: #fff;
+          background-color: red;
+          padding: 3px 6px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  &__btnVerMenu {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+    border-bottom: 2px solid rgb(163, 160, 160);
+    text-decoration: none;
+    transition: border-bottom 0.2s ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid red;
+    }
+  }
+}
+
 // CLASES DINAMICAS
 .--mostrar {
   display: flex;
+}
+.--ocultar {
+  display: none;
 }
