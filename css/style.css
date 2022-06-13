@@ -288,7 +288,7 @@ body {
   padding: 3px 6px;
   text-transform: uppercase;
 }
-.menu__btnVerMenu {
+.menu__btnVerMenu, .presupuesto__btnPedido {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -297,8 +297,46 @@ body {
   text-decoration: none;
   transition: border-bottom 0.2s ease-in-out;
 }
-.menu__btnVerMenu:hover {
+.menu__btnVerMenu:hover, .presupuesto__btnPedido:hover {
   border-bottom: 2px solid red;
+}
+
+.presupuesto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat center/cover url("../resources/img/bg-seccion-presupuesto.webp");
+  padding: 150px 40px;
+  color: #fff;
+  gap: 40px;
+}
+.presupuesto__titulo {
+  text-align: center;
+  font-family: "Bellefair", serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.presupuesto__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.presupuesto__container__containerPaso {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.presupuesto__container__containerPaso__icono {
+  width: 20px;
+}
+.presupuesto__container__containerPaso__descripcion {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.presupuesto__btnPedido {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .--mostrar {
