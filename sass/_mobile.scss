@@ -281,7 +281,7 @@ body {
   }
   &__btnVerMenu {
     font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: rgb(59, 59, 59);
     border-bottom: 2px solid rgb(163, 160, 160);
@@ -299,10 +299,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: no-repeat center/cover url("../resources/img/bg-seccion-presupuesto.webp");
+  background: no-repeat center/cover
+    url("../resources/img/bg-seccion-presupuesto.webp");
   padding: 150px 40px;
   color: #fff;
   gap: 40px;
+  margin-bottom: 110px;
 
   &__titulo {
     text-align: center;
@@ -333,6 +335,268 @@ body {
     @extend .menu__btnVerMenu;
     color: #fff;
     border-bottom: 2px solid #fff;
+  }
+}
+
+.promos {
+  @extend .platosPrincipales;
+  padding: 80px 10px 10px;
+  background: no-repeat center -70px/600% url("../resources/img/bg-seccion-promos.webp");
+
+  &__cabecera {
+    @extend .platosPrincipales__cabecera;
+    background: none;
+
+    &__label {
+      @extend .platosPrincipales__cabecera__label;
+    }
+    &__titulo {
+      @extend .platosPrincipales__cabecera__titulo;
+      width: 80%;
+    }
+  }
+  &__lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+
+    &__item1 {
+      position: relative;
+      text-align: center;
+      transition: transform 1s ease-in-out;
+      transform-style: preserve-3d;
+      height: 180px;
+
+      .promos__lista__item1__frontal,
+      .promos__lista__item1__trasero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        backface-visibility: hidden;
+        display: grid;
+      }
+      &__frontal {
+        &__img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &__titulo {
+          font-size: 2.5rem;
+          font-weight: 400;
+          color: #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+        }
+        &__btnDetalles {
+          font-size: 0.9rem;
+          color: #fff;
+          border-bottom: 2px solid #fff;
+          width: max-content;
+          position: absolute;
+          bottom: 5px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+      &__trasero {
+        transform: rotateX(0.5turn);
+        background-color: #fff;
+        border: 3px solid #000;
+        font-family: "Montserrat", sans-serif;
+
+        &__contenido {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+        }
+        &__precio {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #000;
+          font-weight: 600;
+          font-size: 1.1rem;
+        }
+      }
+      &:hover {
+          transform: rotateX(0.5turn);
+      }
+    }
+    &__item2 {
+      @extend .promos__lista__item1;
+      height: 220px;
+
+      .promos__lista__item2__frontal,
+      .promos__lista__item2__trasero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        backface-visibility: hidden;
+        display: grid;
+      }
+      &__frontal {
+        &__img {
+          @extend .promos__lista__item1__frontal__img;
+        }
+        &__titulo {
+          @extend .promos__lista__item1__frontal__titulo;
+        }
+        &__btnDetalles {
+          @extend .promos__lista__item1__frontal__btnDetalles;
+        }
+      }
+      &__trasero {
+        @extend .promos__lista__item1__trasero;
+        &__contenido {
+          @extend .promos__lista__item1__trasero__contenido;
+        }
+        &__precio {
+          @extend .promos__lista__item1__trasero__precio;
+        }
+      }
+      &:hover {
+          transform: rotateX(0.5turn);
+      }
+    }
+    &__item3 {
+      @extend .promos__lista__item1;
+      height: 200px;
+
+      .promos__lista__item3__frontal,
+      .promos__lista__item3__trasero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        backface-visibility: hidden;
+        display: grid;
+      }
+      &__frontal {
+        &__img {
+          @extend .promos__lista__item1__frontal__img;
+        }
+        &__titulo {
+          @extend .promos__lista__item1__frontal__titulo;
+        }
+        &__btnDetalles {
+          @extend .promos__lista__item1__frontal__btnDetalles;
+        }
+      }
+      &__trasero {
+        @extend .promos__lista__item1__trasero;
+        &__contenido {
+          @extend .promos__lista__item1__trasero__contenido;
+        }
+        &__precio {
+          @extend .promos__lista__item1__trasero__precio;
+        }
+      }
+      &:hover {
+          transform: rotateX(0.5turn);
+      }
+    }
+    &__item4 {
+      @extend .promos__lista__item1;
+      height: 240px;
+
+      .promos__lista__item4__frontal,
+      .promos__lista__item4__trasero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        backface-visibility: hidden;
+        display: grid;
+      }
+      &__frontal {
+        &__img {
+          @extend .promos__lista__item1__frontal__img;
+        }
+        &__titulo {
+          @extend .promos__lista__item1__frontal__titulo;
+        }
+        &__btnDetalles {
+          @extend .promos__lista__item1__frontal__btnDetalles;
+        }
+      }
+      &__trasero {
+        @extend .promos__lista__item1__trasero;
+        &__contenido {
+          @extend .promos__lista__item1__trasero__contenido;
+        }
+        &__precio {
+          @extend .promos__lista__item1__trasero__precio;
+        }
+      }
+      &:hover {
+          transform: rotateX(0.5turn);
+      }
+    }
+    &__item5 {
+      @extend .promos__lista__item1;
+      height: 200px;
+
+      .promos__lista__item5__frontal,
+      .promos__lista__item5__trasero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        backface-visibility: hidden;
+        display: grid;
+      }
+      &__frontal {
+        &__img {
+          @extend .promos__lista__item1__frontal__img;
+        }
+        &__titulo {
+          @extend .promos__lista__item1__frontal__titulo;
+        }
+        &__btnDetalles {
+          @extend .promos__lista__item1__frontal__btnDetalles;
+        }
+      }
+      &__trasero {
+        @extend .promos__lista__item1__trasero;
+        &__contenido {
+          @extend .promos__lista__item1__trasero__contenido;
+        }
+        &__precio {
+          @extend .promos__lista__item1__trasero__precio;
+        }
+      }
+      &:hover {
+          transform: rotateX(0.5turn);
+      }
+    }
   }
 }
 
