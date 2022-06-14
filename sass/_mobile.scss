@@ -126,7 +126,8 @@ body {
     letter-spacing: 4px;
   }
   &__titulo {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(190deg) brightness(114%) contrast(101%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(190deg)
+      brightness(114%) contrast(101%);
   }
   &__btn {
     border: 1px solid rgba(255, 255, 255, 0.452);
@@ -287,7 +288,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: rgb(59, 59, 59);
-    border-bottom: 2px solid rgb(163, 160, 160);
+    border-bottom: 2px solid rgb(160, 160, 160);
     text-decoration: none;
     transition: border-bottom 0.2s ease-in-out;
 
@@ -437,7 +438,7 @@ body {
         }
       }
       &:hover {
-          transform: rotateX(0.5turn);
+        transform: rotateX(0.5turn);
       }
     }
     &__item2 {
@@ -477,7 +478,7 @@ body {
         }
       }
       &:hover {
-          transform: rotateX(0.5turn);
+        transform: rotateX(0.5turn);
       }
     }
     &__item3 {
@@ -517,7 +518,7 @@ body {
         }
       }
       &:hover {
-          transform: rotateX(0.5turn);
+        transform: rotateX(0.5turn);
       }
     }
     &__item4 {
@@ -557,7 +558,7 @@ body {
         }
       }
       &:hover {
-          transform: rotateX(0.5turn);
+        transform: rotateX(0.5turn);
       }
     }
     &__item5 {
@@ -597,9 +598,66 @@ body {
         }
       }
       &:hover {
-          transform: rotateX(0.5turn);
+        transform: rotateX(0.5turn);
       }
     }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: no-repeat center/cover url("../resources/img/bg-footer.webp");
+  padding: 0 20px;
+  position: relative;
+
+  &__logo {
+    width: 60%;
+    margin-top: 150px;
+  }
+  &__dias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    gap: 10px;
+
+    &__dia {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    &__pueblos {
+      line-height: 30px;
+    }
+  }
+  &__btnPedido {
+    @extend .presupuesto__btnPedido;
+  }
+  &__redesSociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 200px;
+
+    &__link {
+      filter: invert(42%) sepia(0%) saturate(0%) hue-rotate(173deg)
+        brightness(93%) contrast(97%);
+    }
+  }
+  &__copyright {
+    position: absolute;
+    bottom: 0;
+    color: rgb(160, 160, 160);
+    background-color: #171620;
+    text-align: center;
+    padding: 30px 5px;
+    width: 100%;
   }
 }
 

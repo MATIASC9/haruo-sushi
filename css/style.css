@@ -291,16 +291,16 @@ body {
   padding: 3px 6px;
   text-transform: uppercase;
 }
-.menu__btnVerMenu, .presupuesto__btnPedido {
+.menu__btnVerMenu, .presupuesto__btnPedido, .footer__btnPedido {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: rgb(59, 59, 59);
-  border-bottom: 2px solid rgb(163, 160, 160);
+  border-bottom: 2px solid rgb(160, 160, 160);
   text-decoration: none;
   transition: border-bottom 0.2s ease-in-out;
 }
-.menu__btnVerMenu:hover, .presupuesto__btnPedido:hover {
+.menu__btnVerMenu:hover, .presupuesto__btnPedido:hover, .footer__btnPedido:hover {
   border-bottom: 2px solid red;
 }
 
@@ -338,7 +338,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
-.presupuesto__btnPedido {
+.presupuesto__btnPedido, .footer__btnPedido {
   color: #fff;
   border-bottom: 2px solid #fff;
 }
@@ -526,6 +526,56 @@ body {
 }
 .promos__lista__item5:hover {
   transform: rotateX(0.5turn);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: no-repeat center/cover url("../resources/img/bg-footer.webp");
+  padding: 0 20px;
+  position: relative;
+}
+.footer__logo {
+  width: 60%;
+  margin-top: 150px;
+}
+.footer__dias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(160, 160, 160);
+  gap: 10px;
+}
+.footer__dias__dia {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.footer__dias__pueblos {
+  line-height: 30px;
+}
+.footer__redesSociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+.footer__redesSociales__link {
+  filter: invert(42%) sepia(0%) saturate(0%) hue-rotate(173deg) brightness(93%) contrast(97%);
+}
+.footer__copyright {
+  position: absolute;
+  bottom: 0;
+  color: rgb(160, 160, 160);
+  background-color: #171620;
+  text-align: center;
+  padding: 30px 5px;
+  width: 100%;
 }
 
 .--mostrar {
