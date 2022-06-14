@@ -177,6 +177,7 @@ body {
   color: rgb(59, 59, 59);
   margin-bottom: 110px;
   gap: 30px;
+  overflow: hidden;
 }
 .horarios__titulo {
   font-weight: 600;
@@ -593,6 +594,7 @@ body {
   background: no-repeat center/cover url("../resources/img/bg-footer.webp");
   padding: 0 20px;
   position: relative;
+  overflow: hidden;
 }
 .footer__logo {
   width: 60%;
