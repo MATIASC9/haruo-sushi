@@ -176,12 +176,68 @@ body {
   font-size: 0.8rem;
   color: rgb(59, 59, 59);
   margin-bottom: 110px;
+  gap: 30px;
 }
 .horarios__titulo {
   font-weight: 600;
 }
 .horarios__dias {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   font-weight: 600;
+  animation: slide 20s 2s ease-in-out infinite;
+  position: relative;
+  width: 95%;
+  padding: 0 20px;
+  text-align: center;
+}
+.horarios__dias__dia1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.horarios__dias__dia2 {
+  position: absolute;
+  top: 50%;
+  left: 700px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.horarios__dias__dia3 {
+  position: absolute;
+  top: 50%;
+  left: 1200px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  15% {
+    left: 0;
+  }
+  25% {
+    left: -500px;
+  }
+  50% {
+    left: -500px;
+  }
+  60% {
+    left: -1000px;
+  }
+  80% {
+    left: -1000px;
+  }
+  90% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .platosPrincipales, .promos, .menu {
@@ -544,18 +600,60 @@ body {
 }
 .footer__dias {
   display: flex;
+  align-items: center;
+  position: relative;
+  color: rgb(160, 160, 160);
+  width: 100%;
+  height: 100px;
+  animation: slide 20s 2s ease-in-out infinite;
+}
+.footer__dias__dia1, .footer__dias__dia3, .footer__dias__dia2 {
+  display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  color: rgb(160, 160, 160);
-  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.footer__dias__dia {
+.footer__dias__dia1__titulo, .footer__dias__dia3__titulo, .footer__dias__dia2__titulo {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.footer__dias__pueblos {
+.footer__dias__dia1__pueblos, .footer__dias__dia3__pueblos, .footer__dias__dia2__pueblos {
   line-height: 30px;
+}
+.footer__dias__dia2 {
+  left: 500px;
+}
+.footer__dias__dia3 {
+  left: 1000px;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  15% {
+    left: 0;
+  }
+  25% {
+    left: -500px;
+  }
+  50% {
+    left: -500px;
+  }
+  60% {
+    left: -1000px;
+  }
+  80% {
+    left: -1000px;
+  }
+  90% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
 }
 .footer__redesSociales {
   display: flex;
